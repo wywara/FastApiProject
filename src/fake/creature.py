@@ -1,4 +1,4 @@
-from models.creature import Creature
+from src.models.creature import Creature
 
 _creatures = [
     Creature(name='Knopa',

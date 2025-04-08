@@ -4,5 +4,5 @@ class Creature(BaseModel):
     name: str
     country: str
     area: str
-    descrioption: str
+    description: str
     aka: str

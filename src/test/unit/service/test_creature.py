@@ -1,5 +1,5 @@
-from service import creature as code
-from models.creature import Creature
+from src.models.creature import Creature
+from src.service import creature as code
 
 sample = Creature(name='yeti',
                   country='CN',
@@ -16,6 +16,6 @@ def test_get_exist():
     resp = code.get_one('yeti')
     assert resp == sample
 
-def test_get_missint():
+def test_get_missing():
     resp = code.get_one('boxturtle')
     assert resp is None
